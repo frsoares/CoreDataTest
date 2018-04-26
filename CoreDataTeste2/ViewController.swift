@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         doctor.school = "UFPE"
         doctor.crm = "1234567890"
         
-        let hospital = Hospital(context: context)
-        hospital.name = "HC"
-        hospital.address = "av. Jornalista Arthur Sá"
+        let hospital = Hospital(name: "HC", address: "av. Jorn..." , context: context)
+        //        hospital.name = "HC"
+        //        hospital.address = "av. Jornalista Arthur Sá"
         
         let du = Duty(context: context)
         du.doctor = doctor
@@ -32,12 +32,12 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
