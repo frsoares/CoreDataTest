@@ -15,7 +15,7 @@
 		DBEB91F620927CE500256F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEB91F420927CE500256F9E /* LaunchScreen.storyboard */; };
 		DBEB91FE20927EE800256F9E /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91FD20927EE800256F9E /* Hospital.swift */; };
 		DBEB9200209280B400256F9E /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91FF209280B400256F9E /* CellCollectionViewCell.swift */; };
-		DBEB92022092822B00256F9E /* Duty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB92012092822B00256F9E /* Duty.swift */; };
+		DBEB92022092822B00256F9E /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB92012092822B00256F9E /* Shift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		DBEB91F720927CE500256F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBEB91FD20927EE800256F9E /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 		DBEB91FF209280B400256F9E /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
-		DBEB92012092822B00256F9E /* Duty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duty.swift; sourceTree = "<group>"; };
+		DBEB92012092822B00256F9E /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				DBEB91F720927CE500256F9E /* Info.plist */,
 				DBEB91EF20927CE100256F9E /* CoreDataTeste2.xcdatamodeld */,
 				DBEB91FF209280B400256F9E /* CellCollectionViewCell.swift */,
-				DBEB92012092822B00256F9E /* Duty.swift */,
+				DBEB92012092822B00256F9E /* Shift.swift */,
 			);
 			path = CoreDataTeste2;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBEB91F120927CE100256F9E /* CoreDataTeste2.xcdatamodeld in Sources */,
-				DBEB92022092822B00256F9E /* Duty.swift in Sources */,
+				DBEB92022092822B00256F9E /* Shift.swift in Sources */,
 				DBEB91FE20927EE800256F9E /* Hospital.swift in Sources */,
 				DBEB91EB20927CE100256F9E /* ViewController.swift in Sources */,
 				DBEB91E920927CE100256F9E /* AppDelegate.swift in Sources */,

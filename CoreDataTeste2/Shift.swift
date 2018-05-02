@@ -1,5 +1,5 @@
 //
-//  Duty.swift
+//  Shift.swift
 //  CoreDataTeste2
 //
 //  Created by Francisco Soares on 26/04/18.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class Duty : NSManagedObject {
+class Shift : NSManagedObject {
     func myNameIs() -> String {
         
         print(true==true ? "sim":"não")

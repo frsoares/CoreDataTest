@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         //        hospital.name = "HC"
         //        hospital.address = "av. Jornalista Arthur Sá"
         
-        let du = Duty(context: context)
+        let du = Shift(context: context)
         du.doctor = doctor
         du.duration = 12
         
