@@ -9,11 +9,8 @@
 import Foundation
 import CoreData
 
-class Shift : NSManagedObject {
+public class Shift : NSManagedObject {
     func myNameIs() -> String {
-        
-        print(true==true ? "sim":"não")
-        
         return self.doctor?.name! ?? ""
     }
 }

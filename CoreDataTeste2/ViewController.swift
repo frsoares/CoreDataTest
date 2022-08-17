@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let shiftRequest = NSFetchRequest<Shift>(entityName: "Shift")
         let shifts = try! context.fetch(shiftRequest)
         if !shifts.isEmpty {
-            for shift in shifts{
+            for shift in shifts {
                 print(shift)
             }
         }

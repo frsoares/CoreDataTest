@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+public typealias UIApplicationLaunchOptionsKey = UIApplication.LaunchOptionsKey
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

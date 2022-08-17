@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G72" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Doctor" representedClassName="Doctor" syncable="YES" codeGenerationType="class">
-        <attribute name="crm" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="school" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crm" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="school" optional="YES" attributeType="String"/>
+        <relationship name="shifts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Shift" inverseName="doctor" inverseEntity="Shift"/>
     </entity>
     <entity name="Hospital" representedClassName=".Hospital" syncable="YES">
-        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="shifts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Shift" inverseName="hospital" inverseEntity="Shift"/>
     </entity>
     <entity name="Shift" representedClassName=".Shift" syncable="YES" codeGenerationType="category">
-        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="doctor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Doctor" syncable="YES"/>
-        <relationship name="hospital" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hospital" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="doctor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Doctor" inverseName="shifts" inverseEntity="Doctor"/>
+        <relationship name="hospital" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hospital" inverseName="shifts" inverseEntity="Hospital"/>
     </entity>
     <elements>
-        <element name="Doctor" positionX="-54" positionY="-9" width="128" height="90"/>
-        <element name="Shift" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="Hospital" positionX="-36" positionY="36" width="128" height="75"/>
+        <element name="Doctor" positionX="-54" positionY="-9" width="128" height="89"/>
+        <element name="Hospital" positionX="-36" positionY="36" width="128" height="74"/>
+        <element name="Shift" positionX="160" positionY="192" width="128" height="74"/>
     </elements>
 </model>
