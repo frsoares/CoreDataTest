@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public class Shift : NSManagedObject {
+public class Shift: NSManagedObject {
     func myNameIs() -> String {
         return self.doctor?.name! ?? ""
     }
