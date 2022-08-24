@@ -11,11 +11,15 @@ import CoreData
 
 class ViewController: UIViewController {
 
+    // recomendado porque escrever esse acesso a AppDelegate toda vez é um saco
+    // e pode ser utilizado várias vezes em outras funções em contextos reais
+    let container = (UIApplication.shared.delegate as? AppDelegate)?
+        .persistentContainer
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let context = (UIApplication.shared.delegate as? AppDelegate)?
-            .persistentContainer.viewContext else { return }
+        guard let context = container?.viewContext else { return }
 
         let shiftRequest = NSFetchRequest<Shift>(entityName: "Shift")
         let shifts = (try? context.fetch(shiftRequest)) ?? []
@@ -47,12 +51,16 @@ class ViewController: UIViewController {
             newShift.hospital = hospital
 
             print(newShift)
-            do {
-                try context.save()
-            } catch {
-                print(error)
-            }
+
+            save()
         }
+    }
+
+    /// Salva alterações aos dados: modificações, criação de dados novos, novas associações, etc.
+    ///
+    /// Recomendado como função separada porque escrever esse acesso a AppDelegate toda vez é um saco
+    func save() {
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 }

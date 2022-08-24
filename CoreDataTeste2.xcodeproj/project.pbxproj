@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBCC4A7328B3684C00A1F784 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCC4A7228B3684C00A1F784 /* CloudKit.framework */; };
 		DBEB91E920927CE100256F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91E820927CE100256F9E /* AppDelegate.swift */; };
 		DBEB91EB20927CE100256F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91EA20927CE100256F9E /* ViewController.swift */; };
 		DBEB91EE20927CE100256F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEB91EC20927CE100256F9E /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBCC4A7028B3684400A1F784 /* CoreDataTeste2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataTeste2.entitlements; sourceTree = "<group>"; };
+		DBCC4A7228B3684C00A1F784 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DBEB91E520927CE100256F9E /* CoreDataTeste2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTeste2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEB91E820927CE100256F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEB91EA20927CE100256F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +40,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCC4A7328B3684C00A1F784 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBCC4A7128B3684C00A1F784 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC4A7228B3684C00A1F784 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBCC4A9428B5513300A1F784 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB91EA20927CE100256F9E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DBCC4A9528B5513A00A1F784 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB91FD20927EE800256F9E /* Hospital.swift */,
+				DBEB92012092822B00256F9E /* Shift.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBCC4A9628B5517E00A1F784 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB91FF209280B400256F9E /* CellCollectionViewCell.swift */,
+				DBEB91EC20927CE100256F9E /* Main.storyboard */,
+				DBEB91F420927CE500256F9E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCC4A9728B551A500A1F784 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DBCC4A7028B3684400A1F784 /* CoreDataTeste2.entitlements */,
+				DBEB91E820927CE100256F9E /* AppDelegate.swift */,
+				DBEB91F220927CE500256F9E /* Assets.xcassets */,
+				DBEB91F720927CE500256F9E /* Info.plist */,
+				DBEB91EF20927CE100256F9E /* CoreDataTeste2.xcdatamodeld */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
 		DBEB91DC20927CE100256F9E = {
 			isa = PBXGroup;
 			children = (
 				DBEB91E720927CE100256F9E /* CoreDataTeste2 */,
 				DBEB91E620927CE100256F9E /* Products */,
+				DBCC4A7128B3684C00A1F784 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,16 +114,10 @@
 		DBEB91E720927CE100256F9E /* CoreDataTeste2 */ = {
 			isa = PBXGroup;
 			children = (
-				DBEB91E820927CE100256F9E /* AppDelegate.swift */,
-				DBEB91EA20927CE100256F9E /* ViewController.swift */,
-				DBEB91FD20927EE800256F9E /* Hospital.swift */,
-				DBEB91EC20927CE100256F9E /* Main.storyboard */,
-				DBEB91F220927CE500256F9E /* Assets.xcassets */,
-				DBEB91F420927CE500256F9E /* LaunchScreen.storyboard */,
-				DBEB91F720927CE500256F9E /* Info.plist */,
-				DBEB91EF20927CE100256F9E /* CoreDataTeste2.xcdatamodeld */,
-				DBEB91FF209280B400256F9E /* CellCollectionViewCell.swift */,
-				DBEB92012092822B00256F9E /* Shift.swift */,
+				DBCC4A9728B551A500A1F784 /* App */,
+				DBCC4A9528B5513A00A1F784 /* Models */,
+				DBCC4A9428B5513300A1F784 /* Controllers */,
+				DBCC4A9628B5517E00A1F784 /* Views */,
 			);
 			path = CoreDataTeste2;
 			sourceTree = "<group>";
@@ -320,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoreDataTeste2/CoreDataTeste2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AMBC8TS93;
 				INFOPLIST_FILE = CoreDataTeste2/Info.plist;
@@ -338,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoreDataTeste2/CoreDataTeste2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AMBC8TS93;
 				INFOPLIST_FILE = CoreDataTeste2/Info.plist;
