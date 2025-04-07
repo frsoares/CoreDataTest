@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DBCC4A7328B3684C00A1F784 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCC4A7228B3684C00A1F784 /* CloudKit.framework */; };
+		DBE6A1B42DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6A1B32DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift */; };
 		DBEB91E920927CE100256F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91E820927CE100256F9E /* AppDelegate.swift */; };
 		DBEB91EB20927CE100256F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91EA20927CE100256F9E /* ViewController.swift */; };
 		DBEB91EE20927CE100256F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEB91EC20927CE100256F9E /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		DBCC4A7028B3684400A1F784 /* CoreDataTeste2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataTeste2.entitlements; sourceTree = "<group>"; };
 		DBCC4A7228B3684C00A1F784 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DBE6A1B32DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		DBEB91E520927CE100256F9E /* CoreDataTeste2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTeste2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEB91E820927CE100256F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEB91EA20927CE100256F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DBEB91EA20927CE100256F9E /* ViewController.swift */,
+				DBE6A1B32DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,7 +135,6 @@
 				DBEB91E120927CE100256F9E /* Sources */,
 				DBEB91E220927CE100256F9E /* Frameworks */,
 				DBEB91E320927CE100256F9E /* Resources */,
-				DBCC4A1828AD383700A1F784 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -191,27 +193,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		DBCC4A1828AD383700A1F784 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		DBEB91E120927CE100256F9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -219,6 +200,7 @@
 			files = (
 				DBEB91F120927CE100256F9E /* CoreDataTeste2.xcdatamodeld in Sources */,
 				DBEB92022092822B00256F9E /* Shift.swift in Sources */,
+				DBE6A1B42DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift in Sources */,
 				DBEB91FE20927EE800256F9E /* Hospital.swift in Sources */,
 				DBEB91EB20927CE100256F9E /* ViewController.swift in Sources */,
 				DBEB91E920927CE100256F9E /* AppDelegate.swift in Sources */,

@@ -8,6 +8,10 @@
 
 import CoreData
 
+/// Entidade `Hospital`
+/// 
+/// um exemplo de criação de entidade de maneira Manual
+/// (ver o arquivo do xcdatamodel, que deve estar configurado dessa maneira)
 public class Hospital: NSManagedObject {
 
     @NSManaged var name: String

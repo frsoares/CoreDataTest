@@ -9,6 +9,10 @@
 import Foundation
 import CoreData
 
+/// Entidade `Shift`
+///
+/// um exemplo de criação de entidade no modo categoria/extensão
+/// (ver o arquivo xcdatamodel que deve estar configurado dessa maneira)
 public class Shift: NSManagedObject {
     func myNameIs() -> String {
         return self.doctor?.name! ?? ""
