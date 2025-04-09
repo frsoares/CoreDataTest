@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DBCC4A7328B3684C00A1F784 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCC4A7228B3684C00A1F784 /* CloudKit.framework */; };
 		DBE6A1B42DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6A1B32DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift */; };
+		DBE6A1B72DA4598A00F4FBC8 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6A1B62DA4598A00F4FBC8 /* PersistenceManager.swift */; };
 		DBEB91E920927CE100256F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91E820927CE100256F9E /* AppDelegate.swift */; };
 		DBEB91EB20927CE100256F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB91EA20927CE100256F9E /* ViewController.swift */; };
 		DBEB91EE20927CE100256F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEB91EC20927CE100256F9E /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		DBCC4A7028B3684400A1F784 /* CoreDataTeste2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataTeste2.entitlements; sourceTree = "<group>"; };
 		DBCC4A7228B3684C00A1F784 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DBE6A1B32DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		DBE6A1B62DA4598A00F4FBC8 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		DBEB91E520927CE100256F9E /* CoreDataTeste2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTeste2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEB91E820927CE100256F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEB91EA20927CE100256F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				DBEB91FD20927EE800256F9E /* Hospital.swift */,
 				DBEB92012092822B00256F9E /* Shift.swift */,
+				DBE6A1B62DA4598A00F4FBC8 /* PersistenceManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				DBEB91F120927CE100256F9E /* CoreDataTeste2.xcdatamodeld in Sources */,
 				DBEB92022092822B00256F9E /* Shift.swift in Sources */,
 				DBE6A1B42DA41E0D00F4FBC8 /* ViewController+CollectionViewDataSource.swift in Sources */,
+				DBE6A1B72DA4598A00F4FBC8 /* PersistenceManager.swift in Sources */,
 				DBEB91FE20927EE800256F9E /* Hospital.swift in Sources */,
 				DBEB91EB20927CE100256F9E /* ViewController.swift in Sources */,
 				DBEB91E920927CE100256F9E /* AppDelegate.swift in Sources */,
